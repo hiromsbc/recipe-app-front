@@ -6,6 +6,7 @@ import FrontVar from './components/common/FrontVar'
 import Ranking from './components/pages/Ranking'
 import New from './components/pages/ New'
 import Search from './components/pages/ Search'
+import NotFound from './components/pages/ NotFound'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/ranking" element={<Ranking />} />
         <Route path="/new" element={<New />} />
         <Route path="/search" element={<Search />} />
+        <Route path="/*" element={<NotFound/>} />
       </Routes>
     </BrowserRouter>
   )
